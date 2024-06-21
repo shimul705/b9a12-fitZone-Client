@@ -1,0 +1,67 @@
+
+#292933
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Primary Color (Main Logo Color):
+#324A5A
+button: (Darker Shade: #1B313F   ) || #b99755
+text: Off-White: #F2F2F2 || Grey:#A0A0A0
+Hover: Lighter Shade: #6C8495
+
+Secondary Colors (Complementary Colors):
+
+
+
+Accent Colors:
+Teal: #2E9CAA
+Blue-Grey: #536D7A
+
+Neutral Colors (for backgrounds, text, etc.):
+White: #FFFFFF
+
+ 
+Black: #000000
+
+
+============================================
+Primary Color (Main Logo Color):
+
+#324A5A (Deep Blue-Grey)
+
+Secondary Colors (Complementary Colors):
+Lighter Shade: #6C8495 (Slate Blue)
+Darker Shade: #1B313F (Rich Navy)
+
+Accent Colors:
+Gold: #FFD700 (Luxurious Gold)
+Silver: #C0C0C0 (Sleek Silver)
+
+Neutral Colors (for backgrounds, text, etc.):
+Ivory: #FFFFF0 (Elegant Ivory)
+Charcoal: #36454F (Dark Charcoal Grey)
+Cream: #F5F5DC (Creamy Off-White)
+Ebony: #555555 (Deep Ebony)
+
+
+
+
+

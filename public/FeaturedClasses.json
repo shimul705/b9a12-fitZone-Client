@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "High-Intensity Interval Training (HIIT)",
+    "description": "Burn maximum calories in a short amount of time with our HIIT classes. This fast-paced workout alternates between intense bursts of activity and fixed periods of less-intense activity or rest, helping you improve cardiovascular fitness and burn fat.",
+    "totalBookings": 1200,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Power Yoga",
+    "description": "Enhance your strength, flexibility, and mental clarity with Power Yoga. This dynamic and vigorous style of yoga will help you build muscle, increase endurance, and find your inner balance.",
+    "totalBookings": 850,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Spin Classes",
+    "description": "Get your heart pumping with our high-energy spin classes. Led by experienced instructors, these classes combine cardio and strength training for a full-body workout that will leave you feeling energized.",
+    "totalBookings": 950,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Pilates Core Conditioning",
+    "description": "Strengthen your core, improve posture, and increase overall body awareness with Pilates Core Conditioning. This class focuses on controlled movements to build long, lean muscles.",
+    "totalBookings": 780,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Strength Training Bootcamp",
+    "description": "Transform your body with our Strength Training Bootcamp. This challenging class combines weightlifting, bodyweight exercises, and functional movements to help you build muscle and boost your metabolism.",
+    "totalBookings": 1100,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Zumba Dance Fitness",
+    "description": "Dance your way to fitness with our Zumba classes. This fun and energetic class blends Latin and international music with dance moves to create an exciting and effective workout.",
+    "totalBookings": 1300,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Boxing Conditioning",
+    "description": "Develop strength, speed, and agility with our Boxing Conditioning classes. These sessions focus on technique, drills, and combinations, providing a full-body workout that will challenge and motivate you.",
+    "totalBookings": 670,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Body Sculpt",
+    "description": "Tone and define every major muscle group with our Body Sculpt classes. Using light to moderate weights with lots of repetition, this class will give you a total body workout.",
+    "totalBookings": 890,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Mindfulness Meditation",
+    "description": "Find peace and relaxation with our Mindfulness Meditation classes. Learn techniques to reduce stress, improve focus, and enhance emotional well-being in a calming environment.",
+    "totalBookings": 530,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Aqua Aerobics",
+    "description": "Enjoy a low-impact workout with our Aqua Aerobics classes. Perfect for all fitness levels, these sessions use water resistance to improve cardiovascular health, strength, and flexibility.",
+    "totalBookings": 410,
+    "image": "https://i.ibb.co/wgjsvhg/129004.jpg"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "name": "John Doe",
+    "profilePicture": "https://example.com/johndoe.jpg",
+    "yearsOfExperience": 10,
+    "socialIcons": {
+      "facebook": "https://facebook.com/johndoe",
+      "twitter": "https://twitter.com/johndoe",
+      "instagram": "https://instagram.com/johndoe"
+    },
+    "availableSlots": [
+      "Monday 10:00-11:00",
+      "Wednesday 14:00-15:00",
+      "Friday 09:00-10:00"
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "profilePicture": "https://example.com/janesmith.jpg",
+    "yearsOfExperience": 7,
+    "socialIcons": {
+      "facebook": "https://facebook.com/janesmith",
+      "twitter": "https://twitter.com/janesmith",
+      "instagram": "https://instagram.com/janesmith"
+    },
+    "availableSlots": [
+      "Tuesday 13:00-14:00",
+      "Thursday 16:00-17:00",
+      "Saturday 10:00-11:00"
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "profilePicture": "https://example.com/janesmith.jpg",
+    "yearsOfExperience": 7,
+    "socialIcons": {
+      "facebook": "https://facebook.com/janesmith",
+      "twitter": "https://twitter.com/janesmith",
+      "instagram": "https://instagram.com/janesmith"
+    },
+    "availableSlots": [
+      "Tuesday 13:00-14:00",
+      "Thursday 16:00-17:00",
+      "Saturday 10:00-11:00"
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "profilePicture": "https://example.com/janesmith.jpg",
+    "yearsOfExperience": 7,
+    "socialIcons": {
+      "facebook": "https://facebook.com/janesmith",
+      "twitter": "https://twitter.com/janesmith",
+      "instagram": "https://instagram.com/janesmith"
+    },
+    "availableSlots": [
+      "Tuesday 13:00-14:00",
+      "Thursday 16:00-17:00",
+      "Saturday 10:00-11:00"
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "profilePicture": "https://example.com/janesmith.jpg",
+    "yearsOfExperience": 7,
+    "socialIcons": {
+      "facebook": "https://facebook.com/janesmith",
+      "twitter": "https://twitter.com/janesmith",
+      "instagram": "https://instagram.com/janesmith"
+    },
+    "availableSlots": [
+      "Tuesday 13:00-14:00",
+      "Thursday 16:00-17:00",
+      "Saturday 10:00-11:00"
+    ]
+  }
+]
