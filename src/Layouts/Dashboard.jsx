@@ -1,17 +1,39 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Navigate, Outlet } from "react-router-dom";
 import { Sidebar } from "flowbite-react";
 import {
-  HiBookmark, HiChartPie, HiCurrencyDollar, HiInbox, HiLogout,
+  HiBookmark, HiChartPie, HiCurrencyDollar, HiHome, HiInbox, HiLogout,
   HiPlus, HiPlusCircle, HiUser, HiViewBoards
 } from "react-icons/hi";
 import { useContext, useEffect, useState } from "react";
 import { axiosSecure } from "../Providers/UseAxiosSecure";
 import { AuthContext } from "../Providers/AuthProviders";
 import Loader from "../Components/Loader/Loader";
+import { toast } from "react-toastify";
 
 const Dashboard = () => {
   const [userRole, setUserRole] = useState(null);
-  const { user } = useContext(AuthContext);
+  const { user ,logOut} = useContext(AuthContext);
+
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        console.log('user Loged Out succesfully');
+        toast.success("You have successfully logged out");
+        Navigate('/');
+        
+      })
+      .catch(error => {
+        console.error(error);
+        if (error.message) {
+          // If the error has a message property (e.g., Firebase error)
+          toast.error(error.message);
+        } else {
+          // If the error does not have a message property (generic error)
+          toast.error("An error occurred. Please try again later.");
+        }
+      })
+  }
 
   useEffect(() => {
     const fetchUserRole = async () => {
@@ -119,9 +141,16 @@ const Dashboard = () => {
               </Sidebar.ItemGroup>
             )}
             <Sidebar.ItemGroup>
-              <Sidebar.Item href="#" icon={HiLogout}>
+              <NavLink to="/">
+                <Sidebar.Item href="#" icon={HiHome}>
+                  Home
+                </Sidebar.Item>
+              </NavLink>
+
+              <Sidebar.Item onClick={handleLogOut} href="#" icon={HiLogout}>
                 LogOut
               </Sidebar.Item>
+
             </Sidebar.ItemGroup>
           </Sidebar.Items>
         </Sidebar>

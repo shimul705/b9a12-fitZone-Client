@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import UseAxiosSecure from "../Providers/UseAxiosSecure";
+import { ToastContainer, toast } from "react-toastify";
+import Loader from "../Components/Loader/Loader";
 
 const TrainerDetailsbyid = () => {
   const { id } = useParams();
@@ -14,11 +16,13 @@ const TrainerDetailsbyid = () => {
       .catch((error) => console.error("Error fetching trainer details:", error));
   }, [id, axiosSecure]);
 
+  const [isConfirmed, setIsConfirmed] = useState(false);
+
   const handleConfirm = () => {
-    axiosSecure.put(`/api/user/${trainer.email}/role`, { role: "trainer" })
+    axiosSecure.put(`/api/user/${trainer.email.toLowerCase()}/role`, { role: "trainer" })
       .then(() => {
-        alert("Trainer confirmed");
-        navigate("/AdminAppliedTrainer");
+        toast.success("Trainer Confirmed");
+        setIsConfirmed(true);  // Disable the button after confirmation
       })
       .catch((error) => console.error("Error confirming trainer:", error));
   };
@@ -30,7 +34,7 @@ const TrainerDetailsbyid = () => {
   };
 
   if (!trainer) {
-    return <div>Loading...</div>;
+    return <div className="h-full w-full flex justify-center items-center"><Loader></Loader></div>;
   }
 
   return (
@@ -72,15 +76,23 @@ const TrainerDetailsbyid = () => {
             Available Time: <span className="badge badge-info">{trainer.availableTime} hour</span>
           </div>
           <div className="flex space-x-4 mt-4">
-            <button className="p-2 bg-green-500 rounded-md text-xl text-white" onClick={handleConfirm}>
-              Confirm
+            <button
+              className={`p-2 rounded-md text-xl text-white ${isConfirmed ? 'bg-gray-400 cursor-not-allowed' : 'bg-green-500'}`}
+              onClick={handleConfirm}
+              disabled={isConfirmed}
+            >
+              {isConfirmed ? "Confirmed" : "Confirm"}
             </button>
-            <button className="p-2 bg-red-500 rounded-md text-xl text-white" onClick={handleReject}>
+            <button disabled={isConfirmed} hidden={isConfirmed} className="p-2 bg-red-500 rounded-md text-xl text-white" onClick={handleReject}>
               Reject
             </button>
           </div>
         </div>
       </div>
+      <ToastContainer
+        theme="colored"
+        position="top-center"
+      />
     </>
   );
 };

@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProviders";
 
 import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHome } from "react-icons/fa";
 import { toast } from 'react-toastify';
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
 import { Helmet } from "react-helmet-async";
@@ -124,6 +124,12 @@ const Login = () => {
           <div data-aos='fade-in' className="text-center lg:text-left">
             <h1 className="text-5xl font-jost font-bold">Login now!</h1>
             <hr className="border-t mt-4 border-slate-500 opacity-70" />
+            <Link to='/'>
+              <div className="btn border-none hover:text-black py-2 gap-5 justify-center text-white my-2 bg-[#44b2fc] rounded-xl text-center flex items-center w-full cursor-pointer">
+                <FaHome />
+                <p className="text-center">Back To Home</p>
+              </div>
+            </Link>
           </div>
 
           <div data-aos='fade-up' className="shadow-2xl w-full p-6 rounded-xl bg-slate-200 bg-opacity-20">
@@ -185,10 +191,13 @@ const Login = () => {
                 <FcGoogle />
                 <p className="text-center ">Login With Google</p>
               </div>
-              <div data-aos='fade-up' onClick={handleGithubSignIn} className="btn border-none hover:text-black py-2 justify-center text-white my-2 bg-[#324A5A] text-center flex items-center w-full cursor-pointer">
+              <div  onClick={handleGithubSignIn} className="btn border-none hover:text-black py-2 justify-center text-white my-2 bg-[#324A5A] text-center flex items-center w-full cursor-pointer">
                 <FaGithub />
                 <p className="text-center">Login With GitHub</p>
               </div>
+
+
+
 
             </form>
           </div>
